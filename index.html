@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polita Sándwichería - Sistema de Gestión Administrativa</title>
+    <title>Polita Sándwichería | Menú & Experiencia</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,255 +30,345 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body class="bg-polita-crema font-sans text-gray-800 antialiased min-h-screen flex flex-col">
+<body class="bg-polita-crema text-gray-800 font-sans antialiased selection:bg-polita-rosa selection:text-polita-verde">
 
-    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
-    <header class="bg-polita-verde text-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-            <div class="flex items-center space-x-3">
-                <div class="bg-polita-rosa p-2 rounded-xl text-polita-verdedark flex items-center justify-center shadow-sm">
-                    <i class="ph-bold ph-sandwich text-2xl"></i>
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <header class="bg-polita-verde text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <!-- LOGO BRAND -->
+            <a href="#inicio" class="flex items-center space-x-3 group">
+                <div class="bg-polita-rosa p-2.5 rounded-2xl text-polita-verdedark group-hover:scale-105 transition">
+                    <i class="ph-bold ph-sandwich text-3xl"></i>
                 </div>
                 <div>
-                    <span class="font-extrabold text-xl tracking-wide uppercase text-polita-amarillo">Polita</span>
-                    <span class="text-xs block text-polita-lilalight tracking-widest font-medium">SÁNDWICHERÍA</span>
+                    <span class="font-black text-2xl tracking-wider text-polita-amarillo block leading-tight">POLITA</span>
+                    <span class="text-xs text-polita-lilalight tracking-widest font-semibold block uppercase">SÁNDWICHERÍA</span>
                 </div>
-            </div>
-            <div class="flex items-center space-x-4">
-                <span class="text-xs bg-polita-verdedark py-1.5 px-3 rounded-full text-polita-amarillo flex items-center gap-1.5 border border-polita-rosa/30">
-                    <i class="ph-fill ph-circle text-[10px] text-green-400"></i> Loyverse POS Conectado
-                </span>
-                <div class="flex items-center space-x-2 border-l border-white/20 pl-4">
-                    <i class="ph-bold ph-user-circle text-2xl text-polita-lila"></i>
-                    <span class="text-sm font-medium hidden sm:inline">Gerencia</span>
-                </div>
+            </a>
+
+            <!-- MENÚ DE NAVEGACIÓN -->
+            <nav class="hidden md:flex items-center space-x-8 font-bold text-sm tracking-wide">
+                <a href="#inicio" class="text-polita-amarillo hover:text-polita-rosa transition">Inicio</a>
+                <a href="#menu" class="text-white hover:text-polita-amarillo transition">Menú</a>
+                <a href="#nosotros" class="text-white hover:text-polita-amarillo transition">Nosotros</a>
+                <a href="#contacto" class="text-white hover:text-polita-amarillo transition">Contacto</a>
+                <a href="#ubicacion" class="bg-polita-rosa text-polita-verdedark hover:bg-polita-amarillo px-5 py-2.5 rounded-full transition shadow-md flex items-center gap-2">
+                    <i class="ph-bold ph-map-pin"></i> Ubicación
+                </a>
+            </nav>
+
+            <!-- MENÚ MÓVIL (BOTÓN) -->
+            <div class="md:hidden">
+                <a href="#menu" class="bg-polita-rosa text-polita-verdedark font-bold text-xs px-4 py-2 rounded-full">Ver Menú</a>
             </div>
         </div>
     </header>
 
-    <!-- CONTENEDOR PRINCIPAL -->
-    <div class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row gap-6">
-
-        <!-- MENÚ LATERAL -->
-        <aside class="w-full md:w-64 bg-white rounded-2xl shadow-sm border border-polita-lila/30 p-4 flex flex-col justify-between shrink-0">
-            <div class="space-y-4">
-                <h2 class="text-xs font-bold text-polita-verde uppercase tracking-wider px-3">Módulos del Sistema</h2>
-                <nav class="space-y-1.5">
-                    <a href="#dashboard" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl bg-polita-lilalight text-polita-verde font-bold">
-                        <i class="ph-bold ph-chart-pie text-lg text-polita-rosa"></i>
-                        <span>Dashboard</span>
+    <!-- 1. SECCIÓN INICIO / HERO -->
+    <section id="inicio" class="relative bg-polita-lilalight/40 py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6 text-center md:text-left">
+                <span class="bg-polita-rosalight text-polita-verde font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full inline-block border border-polita-rosa/40">
+                    ✨ Pan de Masa Madre & Ingredientes Frescos
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-polita-verde leading-tight">
+                    El arte del sándwich artesanal hecho en casa.
+                </h1>
+                <p class="text-lg text-gray-600 max-w-xl font-medium">
+                    Desayunos disponibles todo el día, pan de cereales horneado, especialidades de autor y cafetería de especialidad.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+                    <a href="#menu" class="bg-polita-verde hover:bg-polita-verdedark text-white font-extrabold px-8 py-4 rounded-2xl shadow-lg transition text-center flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-book-open text-xl text-polita-amarillo"></i> Explorar el Menú
                     </a>
-                    <a href="#inventario" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-gray-600 hover:bg-polita-amarillolight hover:text-polita-verde font-medium transition">
-                        <i class="ph-bold ph-package text-lg text-polita-verde"></i>
-                        <span>Inventario (MP)</span>
+                    <a href="#ubicacion" class="bg-white border-2 border-polita-verde text-polita-verde hover:bg-polita-amarillolight font-extrabold px-8 py-4 rounded-2xl transition text-center flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-storefront text-xl"></i> Visítanos Hoy
                     </a>
-                    <a href="#recetario" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-gray-600 hover:bg-polita-rosalight hover:text-polita-verde font-medium transition">
-                        <i class="ph-bold ph-book-open text-lg text-polita-rosa"></i>
-                        <span>Recetario & Costeo</span>
-                    </a>
-                    <a href="#ventas" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-gray-600 hover:bg-polita-lilalight hover:text-polita-verde font-medium transition">
-                        <i class="ph-bold ph-shopping-cart text-lg text-polita-verde"></i>
-                        <span>Histórico Ventas</span>
-                    </a>
-                </nav>
-            </div>
-
-            <!-- PERMISOS Y ROL CURRENT -->
-            <div class="pt-4 border-t border-gray-100 mt-6">
-                <div class="bg-polita-amarillolight/60 p-3 rounded-xl border border-polita-amarillo/40 text-xs text-gray-700">
-                    <p class="font-bold text-polita-verde flex items-center gap-1">
-                        <i class="ph-bold ph-shield-check text-polita-rosa"></i> Rol: Administración
-                    </p>
-                    <p class="mt-1 text-gray-600">Acceso a edición de recetas, costos de insumos y reportes.</p>
                 </div>
             </div>
-        </aside>
+            <!-- Bóveda Ilustrativa / Card Highlight -->
+            <div class="flex-1 relative w-full max-w-md">
+                <div class="bg-white p-6 rounded-3xl shadow-xl border-4 border-polita-rosa space-y-4">
+                    <div class="bg-polita-amarillolight p-4 rounded-2xl text-center border border-polita-amarillo/40">
+                        <span class="text-xs font-black text-polita-verde uppercase tracking-widest">⭐ Especialidad de la Casa</span>
+                        <h3 class="text-2xl font-black text-polita-verde mt-1">Sándwich Pedro Pascal</h3>
+                        <p class="text-xs text-gray-600 mt-1">Roastbeef, huevo revuelto, queso parmesano y aderezo de ajo en pan artesanal.</p>
+                        <span class="text-xl font-black text-polita-verde block mt-2">$125.00 MXN</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 text-center text-xs font-bold text-polita-verde">
+                        <div class="bg-polita-lilalight p-3 rounded-xl">☕ Café de Especialidad</div>
+                        <div class="bg-polita-rosalight p-3 rounded-xl">🥐 Repostería del Día</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- ÁREA DE CONTENIDO -->
-        <main class="flex-1 space-y-6">
+    <!-- 2. SECCIÓN MENÚ PÚBLICO -->
+    <section id="menu" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+            <h2 class="text-3xl sm:text-4xl font-black text-polita-verde">Nuestro Menú</h2>
+            <p class="text-gray-600 font-medium text-sm">Elige entre pan blanco o de semillas (ambos elaborados con masa madre).</p>
+        </div>
 
-            <!-- METRICAS CLAVE / DASHBOARD -->
-            <section id="dashboard" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- Tarjeta 1: Ventas -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-polita-amarillo flex items-center justify-between">
+        <!-- CATEGORÍA: DESAYUNOS -->
+        <div class="space-y-6">
+            <div class="flex items-center gap-3 border-b-2 border-polita-rosa pb-3">
+                <i class="ph-bold ph-sun text-3xl text-polita-amarillo bg-polita-verde p-2 rounded-xl"></i>
+                <div>
+                    <h3 class="text-2xl font-black text-polita-verde">Desayunos</h3>
+                    <span class="text-xs font-bold text-polita-rosa uppercase tracking-wider">Disponibles todo el día</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tazón Frutas -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
                     <div>
-                        <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Ventas del Día</p>
-                        <p class="text-2xl font-black text-polita-verde mt-1">$12,450.00</p>
-                        <p class="text-xs text-green-600 font-medium mt-1 flex items-center gap-1">
-                            <i class="ph-bold ph-trend-up"></i> Sincronizado Loyverse
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-lg text-polita-verde">Tazón de Frutas</h4>
+                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$60</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Melón, plátano, manzana y fresa, yogurt natural, granola y miel.</p>
+                    </div>
+                </div>
+                <!-- Pan Polita -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-lg text-polita-verde">Pan Polita</h4>
+                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$95</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Pan francés con compota de frutos rojos y queso ricotta casero.</p>
+                    </div>
+                </div>
+                <!-- Tosta Serrano -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-lg text-polita-verde">Tosta Serrano</h4>
+                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$115</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Dos huevos estrellados o revueltos sobre pan tostado con aguacate, jamón serrano y queso parmesano.</p>
+                    </div>
+                </div>
+                <!-- Benedictinos -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-lg text-polita-verde">Benedictinos</h4>
+                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$120</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Dos huevos pochados sobre pan con aguacate, jamón y espinaca bañados en salsa holandesa.</p>
+                    </div>
+                </div>
+                <!-- Sándwich Grogu -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-lg text-polita-verde">Sándwich Grogu</h4>
+                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$95</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Queso de cabra, huevo revuelto, aguacate y mayonesa de cilantro.</p>
+                    </div>
+                </div>
+                <!-- Sándwich Pedro Pascal -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-rosa shadow-sm space-y-2 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-lg text-polita-verde">Sándwich Pedro Pascal</h4>
+                            <span class="font-black text-polita-verde bg-polita-rosalight px-2.5 py-1 rounded-lg text-sm">$125</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Roastbeef, huevo revuelto, queso parmesano y aderezo de ajo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORÍA: SÁNDWICHES -->
+        <div class="space-y-6">
+            <div class="flex items-center gap-3 border-b-2 border-polita-amarillo pb-3">
+                <i class="ph-bold ph-sandwich text-3xl text-polita-verdedark bg-polita-rosa p-2 rounded-xl"></i>
+                <h3 class="text-2xl font-black text-polita-verde">Sándwiches de la Casa</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Clásico -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-lg text-polita-verde">Clásico</h4>
+                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$105</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Pechuga de pavo ahumado, queso gruyere y mayonesa de habanero o cilantro.</p>
+                </div>
+                <!-- Madame Polita -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-lg text-polita-verde">Madame Polita</h4>
+                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$125</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Pavo ahumado, gruyere, mayonesa de cilantro con huevo estrellado encima y bañado en salsa de frijol.</p>
+                </div>
+                <!-- Roastbeef -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-lg text-polita-verde">Roastbeef</h4>
+                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$140</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Roastbeef, queso gruyere, poro caramelizado, pepinos encurtidos y mostaza dijon.</p>
+                </div>
+                <!-- Salmón -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-lg text-polita-verde">Salmón</h4>
+                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$160</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Salmón ahumado, queso boursin de cabra, aguacate, pepino, alcaparras y arúgula.</p>
+                </div>
+                <!-- Suadero -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-lg text-polita-verde">Suadero al Horno</h4>
+                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$110</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Carne de suadero al horno, queso chihuahua, mayonesa de chile serrano y cebollas encurtidas.</p>
+                </div>
+                <!-- Veggie Pesto -->
+                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-lg text-polita-verde">Veggie Pesto</h4>
+                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$95</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Aguacate, queso chihuahua, nuez, arúgula, pepino y tomate deshidratado.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORÍA: BEBIDAS -->
+        <div class="bg-polita-lilalight/50 p-8 rounded-3xl space-y-6">
+            <h3 class="text-2xl font-black text-polita-verde border-b border-polita-lila/40 pb-3 flex items-center gap-2">
+                <i class="ph-bold ph-coffee text-polita-rosa text-3xl"></i> Bebidas & Cafetería
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-semibold">
+                <div class="bg-white p-3 rounded-xl border">Espresso: <span class="font-bold text-polita-verde">$40</span></div>
+                <div class="bg-white p-3 rounded-xl border">Americano: <span class="font-bold text-polita-verde">$50</span></div>
+                <div class="bg-white p-3 rounded-xl border">Cold Brew: <span class="font-bold text-polita-verde">$65</span></div>
+                <div class="bg-white p-3 rounded-xl border">Latte: <span class="font-bold text-polita-verde">$60</span></div>
+                <div class="bg-white p-3 rounded-xl border">Matcha: <span class="font-bold text-polita-verde">$65</span></div>
+                <div class="bg-white p-3 rounded-xl border">Chai: <span class="font-bold text-polita-verde">$65</span></div>
+                <div class="bg-white p-3 rounded-xl border">Aguas Naturales: <span class="font-bold text-polita-verde">$40</span></div>
+                <div class="bg-white p-3 rounded-xl border">Jugos Naturales: <span class="font-bold text-polita-verde">$65</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="bg-polita-verde text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <span class="bg-polita-rosa text-polita-verdedark font-black text-xs px-3 py-1 rounded-full uppercase">Nuestra Historia</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-polita-amarillo">Sándwiches hechos con paciencia, amor y masa madre.</h2>
+                <p class="text-polita-lilalight text-sm leading-relaxed">
+                    En Polita Sándwichería creemos que un gran sándwich empieza desde el pan. Horneamos opciones de masa madre (blanco y semillas) y seleccionamos los aderezos y proteína con la más alta calidad para brindarte una experiencia acogedora e inolvidable.
+                </p>
+                <div class="grid grid-cols-3 gap-4 pt-4 text-center">
+                    <div class="bg-polita-verdedark p-4 rounded-2xl border border-polita-rosa/20">
+                        <span class="text-2xl font-black text-polita-amarillo block">100%</span>
+                        <span class="text-xs text-gray-300">Artesanal</span>
+                    </div>
+                    <div class="bg-polita-verdedark p-4 rounded-2xl border border-polita-rosa/20">
+                        <span class="text-2xl font-black text-polita-rosa block">Masa Madre</span>
+                        <span class="text-xs text-gray-300">Receta Propia</span>
+                    </div>
+                    <div class="bg-polita-verdedark p-4 rounded-2xl border border-polita-rosa/20">
+                        <span class="text-2xl font-black text-polita-amarillo block">Todo el Día</span>
+                        <span class="text-xs text-gray-300">Desayunos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 bg-polita-rosalight p-8 rounded-3xl text-polita-verdedark space-y-4">
+                <i class="ph-bold ph-quotes text-5xl text-polita-verde"></i>
+                <p class="font-bold text-lg leading-snug">"El mejor lugar para disfrutar de un café caliente, pan recién horneado y una buena plática."</p>
+                <span class="text-xs font-black uppercase block tracking-wider text-polita-verde">— Equipo Polita Sándwichería</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN CONTACTO -->
+    <section id="contacto" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center max-w-xl mx-auto space-y-3">
+            <h2 class="text-3xl font-black text-polita-verde">Contacto & Pedidos</h2>
+            <p class="text-xs text-gray-600 font-medium">¿Tienes alguna duda o quieres realizar un pedido anticipado? Escríbenos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Formulario Simple -->
+            <form class="bg-white p-6 rounded-3xl shadow-sm border border-polita-lila/30 space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-polita-verde uppercase mb-1">Nombre Completo</label>
+                    <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-polita-rosa">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-polita-verde uppercase mb-1">Correo o Teléfono</label>
+                    <input type="text" placeholder="Contacto" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-polita-rosa">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-polita-verde uppercase mb-1">Mensaje</label>
+                    <textarea rows="4" placeholder="¿En qué te podemos ayudar?" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-polita-rosa"></textarea>
+                </div>
+                <button type="button" class="w-full bg-polita-rosa hover:bg-polita-verde text-polita-verdedark hover:text-white font-black py-3 rounded-xl transition text-sm">
+                    Enviar Mensaje
+                </button>
+            </form>
+
+            <!-- Datos Directos -->
+            <div class="space-y-6">
+                <div class="bg-polita-amarillolight p-6 rounded-3xl border border-polita-amarillo/40 space-y-4">
+                    <h3 class="font-black text-polita-verde text-lg">Atención al Cliente</h3>
+                    <div class="space-y-3 text-sm font-medium text-gray-700">
+                        <p class="flex items-center gap-3">
+                            <i class="ph-bold ph-whatsapp-logo text-2xl text-green-600"></i> WhatsApp: (55) 1234-5678
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="ph-bold ph-envelope text-2xl text-polita-rosa"></i> hola@politasandwicheria.com
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="ph-bold ph-instagram-logo text-2xl text-polita-verde"></i> @polita.sandwicheria
                         </p>
                     </div>
-                    <div class="bg-polita-amarillolight p-3 rounded-xl text-polita-verde">
-                        <i class="ph-bold ph-receipt text-2xl"></i>
-                    </div>
                 </div>
 
-                <!-- Tarjeta 2: Food Cost -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-polita-rosa flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Food Cost Promedio</p>
-                        <p class="text-2xl font-black text-polita-verde mt-1">28.5%</p>
-                        <p class="text-xs text-gray-500 mt-1">Meta: &lt; 30.0%</p>
-                    </div>
-                    <div class="bg-polita-rosalight p-3 rounded-xl text-polita-rosa">
-                        <i class="ph-bold ph-percent text-2xl"></i>
-                    </div>
+                <div class="bg-polita-lilalight p-6 rounded-3xl border border-polita-lila/30">
+                    <h4 class="font-bold text-polita-verde text-sm uppercase tracking-wider mb-2">Horarios de Atención</h4>
+                    <p class="text-xs text-gray-600">Lunes a Domingo: 8:00 AM - 8:00 PM</p>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Tarjeta 3: Stock -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-red-400 flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Alertas Reorden</p>
-                        <p class="text-2xl font-black text-red-600 mt-1">3 Insumos</p>
-                        <p class="text-xs text-red-500 mt-1 font-medium">Bajo stock mínimo</p>
-                    </div>
-                    <div class="bg-red-50 p-3 rounded-xl text-red-500">
-                        <i class="ph-bold ph-warning text-2xl"></i>
-                    </div>
+    <!-- 5. SECCIÓN UBICACIÓN -->
+    <section id="ubicacion" class="bg-polita-lilalight/30 py-20 border-t border-polita-lila/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-center">
+            <div class="space-y-2">
+                <span class="bg-polita-amarillo text-polita-verdedark font-black text-xs px-3 py-1 rounded-full uppercase">Visítanos</span>
+                <h2 class="text-3xl font-black text-polita-verde">¿Dónde estamos?</h2>
+                <p class="text-xs text-gray-600">Te esperamos para disfrutar de la experiencia completa de Polita Sándwichería.</p>
+            </div>
+
+            <!-- Mapa / Caja de Dirección -->
+            <div class="bg-white p-4 rounded-3xl shadow-md border border-polita-lila/30 max-w-3xl mx-auto space-y-4">
+                <div class="bg-polita-crema p-6 rounded-2xl text-center space-y-2">
+                    <i class="ph-bold ph-map-pin text-4xl text-polita-rosa"></i>
+                    <h3 class="font-black text-xl text-polita-verde">Polita Sándwichería</h3>
+                    <p class="text-sm text-gray-600">Tu dirección física aquí (Calle, Número, Colonia, Ciudad)</p>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Tarjeta 4: Productos -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-polita-lila flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Menú Activo</p>
-                        <p class="text-2xl font-black text-polita-verde mt-1">301 PRD</p>
-                        <p class="text-xs text-gray-500 mt-1">Fichas estandarizadas</p>
-                    </div>
-                    <div class="bg-polita-lilalight p-3 rounded-xl text-polita-verde">
-                        <i class="ph-bold ph-cooking-pot text-2xl"></i>
-                    </div>
-                </div>
-            </section>
-
-            <!-- MÓDULO: CONTROL DE INVENTARIO (MP) -->
-            <section id="inventario" class="bg-white rounded-2xl shadow-sm border border-polita-lila/30 p-6 space-y-4">
-                <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 border-b border-gray-100 pb-4">
-                    <div>
-                        <h2 class="text-lg font-bold text-polita-verde">Catálogo e Inventario de Materias Primas</h2>
-                        <p class="text-xs text-gray-500">Control de insumos (MP-001 a MP-177) con semáforo de reorden.</p>
-                    </div>
-                    <button class="bg-polita-rosa hover:bg-polita-verde text-polita-verde hover:text-white font-bold text-sm py-2 px-4 rounded-xl transition flex items-center justify-center gap-2 shadow-sm">
-                        <i class="ph-bold ph-plus"></i> Registrar Entrada / Compra
-                    </button>
-                </div>
-
-                <!-- Tabla de Inventario -->
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left text-gray-600">
-                        <thead class="text-xs text-polita-verde uppercase bg-polita-lilalight/50 font-bold">
-                            <tr>
-                                <th class="py-3 px-4 rounded-l-xl">ID Insumo</th>
-                                <th class="py-3 px-4">Materia Prima</th>
-                                <th class="py-3 px-4">Categoría</th>
-                                <th class="py-3 px-4">Unidad Compra / Receta</th>
-                                <th class="py-3 px-4">Costo Receta</th>
-                                <th class="py-3 px-4">Stock Actual</th>
-                                <th class="py-3 px-4 rounded-r-xl">Estado</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-100">
-                            <!-- Fila 1 -->
-                            <tr class="hover:bg-polita-crema/50">
-                                <td class="py-3 px-4 font-bold text-polita-verde">MP-001</td>
-                                <td class="py-3 px-4 font-medium text-gray-900">Pan Masa Madre (Blanco/Semillas)</td>
-                                <td class="py-3 px-4">Panadería</td>
-                                <td class="py-3 px-4">Pieza / Pieza</td>
-                                <td class="py-3 px-4 font-semibold text-gray-800">$12.00 / pza</td>
-                                <td class="py-3 px-4 font-bold text-polita-verde">45 pzas</td>
-                                <td class="py-3 px-4">
-                                    <span class="bg-green-100 text-green-800 text-xs px-2.5 py-1 rounded-full font-bold inline-flex items-center gap-1">
-                                        🟢 Óptimo
-                                    </span>
-                                </td>
-                            </tr>
-                            <!-- Fila 2 -->
-                            <tr class="hover:bg-polita-crema/50">
-                                <td class="py-3 px-4 font-bold text-polita-verde">MP-003</td>
-                                <td class="py-3 px-4 font-medium text-gray-900">Aderezo Miel Mostaza</td>
-                                <td class="py-3 px-4">Salsas y Aderezos</td>
-                                <td class="py-3 px-4">Litro / ml</td>
-                                <td class="py-3 px-4 font-semibold text-gray-800">$0.08 / ml</td>
-                                <td class="py-3 px-4 font-bold text-red-600">150 ml</td>
-                                <td class="py-3 px-4">
-                                    <span class="bg-red-100 text-red-800 text-xs px-2.5 py-1 rounded-full font-bold inline-flex items-center gap-1">
-                                        🔴 Comprar
-                                    </span>
-                                </td>
-                            </tr>
-                            <!-- Fila 3 -->
-                            <tr class="hover:bg-polita-crema/50">
-                                <td class="py-3 px-4 font-bold text-polita-verde">MP-107</td>
-                                <td class="py-3 px-4 font-medium text-gray-900">Melón Cántaloupe</td>
-                                <td class="py-3 px-4">Frutas y Verduras</td>
-                                <td class="py-3 px-4">Kg / Gramos</td>
-                                <td class="py-3 px-4 font-semibold text-gray-800">$0.035 / g</td>
-                                <td class="py-3 px-4 font-bold text-amber-700">800 g</td>
-                                <td class="py-3 px-4">
-                                    <span class="bg-polita-amarillolight text-amber-800 border border-polita-amarillo/40 text-xs px-2.5 py-1 rounded-full font-bold inline-flex items-center gap-1">
-                                        🟡 Ajustado
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <!-- MÓDULO: RECETARIO Y COSTEO (ESCANDALLOS) -->
-            <section id="recetario" class="bg-white rounded-2xl shadow-sm border border-polita-lila/30 p-6 space-y-4">
-                <div class="flex justify-between items-center border-b border-gray-100 pb-4">
-                    <div>
-                        <h2 class="text-lg font-bold text-polita-verde">Fichas Técnicas y Escandallos de Menú</h2>
-                        <p class="text-xs text-gray-500">Cálculo en tiempo real de % Food Cost e ingredientes por platillo.</p>
-                    </div>
-                </div>
-
-                <!-- Ejemplo Ficha Técnica: Sandwich Pedro Pascal -->
-                <div class="border border-polita-lila/40 rounded-2xl p-5 bg-polita-crema/40 space-y-4">
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-start gap-2">
-                        <div>
-                            <span class="bg-polita-rosa text-polita-verdedark text-xs font-black px-3 py-1 rounded-full">PRD-012</span>
-                            <h3 class="text-lg font-black text-polita-verde mt-1">SÁNDWICH PEDRO PASCAL</h3>
-                            <p class="text-xs text-gray-500">Categoría: Sándwiches | Pan de Masa Madre</p>
-                        </div>
-                        <div class="text-left sm:text-right bg-white p-3 rounded-xl border border-polita-amarillo/50">
-                            <span class="text-xs text-gray-400 block font-bold uppercase">Precio Venta (Loyverse)</span>
-                            <p class="text-xl font-black text-polita-verde">$125.00 MXN</p>
-                        </div>
-                    </div>
-
-                    <!-- Ingredientes de la Receta -->
-                    <div class="text-xs space-y-2">
-                        <p class="font-bold text-polita-verde uppercase tracking-wider">Ingredientes / Escandallo:</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-                            <div class="bg-white p-2.5 rounded-xl border border-gray-200 font-medium">🥩 Roastbeef: 100g</div>
-                            <div class="bg-white p-2.5 rounded-xl border border-gray-200 font-medium">🥚 Huevo Revuelto: 1 pza</div>
-                            <div class="bg-white p-2.5 rounded-xl border border-gray-200 font-medium">🧀 Queso Parmesano: 20g</div>
-                            <div class="bg-white p-2.5 rounded-xl border border-gray-200 font-medium">🧄 Aderezo de Ajo: 25ml</div>
-                            <div class="bg-white p-2.5 rounded-xl border border-gray-200 font-medium">🍞 Pan Masa Madre: 1 pza</div>
-                        </div>
-                    </div>
-
-                    <!-- Indicadores de Rentabilidad -->
-                    <div class="pt-3 border-t border-polita-lila/20 grid grid-cols-3 gap-3 text-center text-xs">
-                        <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-                            <span class="text-gray-400 block font-medium">Costo Directo</span>
-                            <span class="font-black text-gray-800 text-sm">$33.50</span>
-                        </div>
-                        <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-                            <span class="text-gray-400 block font-medium">Utilidad Bruta</span>
-                            <span class="font-black text-green-600 text-sm">$91.50</span>
-                        </div>
-                        <div class="bg-polita-rosalight p-3 rounded-xl shadow-sm border border-polita-rosa/30">
-                            <span class="text-polita-verdedark block font-bold">% Food Cost</span>
-                            <span class="font-black text-polita-verde text-sm">26.8%</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-    </div>
+    <!-- FOOTER -->
+    <footer class="bg-polita-verdedark text-white py-8 border-t border-white/10 text-center text-xs space-y-2">
+        <p class="font-bold text-polita-amarillo">Polita Sándwichería © 2026</p>
+        <p class="text-gray-400">Todos los derechos reservados. Pan artesanal & Cafetería.</p>
+    </footer>
 
 </body>
 </html>
