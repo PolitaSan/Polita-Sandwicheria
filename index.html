@@ -109,3 +109,213 @@
                 <button onclick="setCategory('Productos Polita')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Pág 2: Productos Polita</button>
                 <button onclick="setCategory('Bebidas Cafe')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Pág 3: Cafeína & Sin Café</button>
                 <button onclick="setCategory('Otras Bebidas')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Pág 3: Sodas, Jugos & Cervezas</button>
+            </div>
+        </div>
+
+        <!-- PAQUETE DESAYUNO (PÁGINA 1 DEL PDF) -->
+        <div class="bg-gradient-to-r from-polita-rosalight to-polita-amarillolight p-6 rounded-3xl border border-polita-rosa shadow-sm flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="space-y-1 text-center md:text-left">
+                <span class="bg-polita-verde text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider">Paquete Especial (Pág. 1)</span>
+                <h3 class="text-xl font-black text-polita-verdedark">PAQUETE DESAYUNO — $50 MXN</h3>
+                <p class="text-xs text-gray-700 font-medium">Café americano y un agua de horchata o jamaica.</p>
+                <p class="text-[11px] text-gray-500 italic">*No aplica para llevar, válido hasta la 1:00 pm.</p>
+            </div>
+            <div class="bg-white px-5 py-3 rounded-2xl font-black text-polita-verde text-2xl shadow-sm border border-polita-rosa/40">
+                $50
+            </div>
+        </div>
+
+        <!-- GRILLA DINÁMICA DE PRODUCTOS DE LAS 3 PÁGINAS -->
+        <div id="menuGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Carga automatizada por JS -->
+        </div>
+
+        <!-- SECCIÓN DE EXTRAS DE BEBIDAS Y PLATILLOS (PÁGINA 1 Y 3 DEL PDF) -->
+        <div class="bg-white p-6 rounded-3xl border border-polita-lila/30 space-y-4 text-xs">
+            <h3 class="font-black text-polita-verde text-sm uppercase tracking-wider flex items-center gap-2">
+                <i class="ph-bold ph-plus-circle text-polita-rosa text-lg"></i> Extras y Modificadores Oficiales (PDF)
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="bg-polita-crema p-3 rounded-xl border">☕ Opción Bebida Fría: <span class="font-bold text-polita-verde">+$10</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🥛 Leche Almendra o Coco: <span class="font-bold text-polita-verde">+$15</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🌾 Leche Avena (Oatly): <span class="font-bold text-polita-verde">+$20</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🍨 Añade Helado de Vainilla (Waffle/Panqué): <span class="font-bold text-polita-verde">+$20</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🥓 Extra Tocino (Tosta Verde): <span class="font-bold text-polita-verde">+$20</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🐟 Cambia Jamón por Salmón (Benedictinos): <span class="font-bold text-polita-verde">+$50</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🍳 Extra Huevo (Tosta Chilaquiles): <span class="font-bold text-polita-verde">+$20</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🥩 Extra Pollo, Pastor o Suadero (Chilaquiles): <span class="font-bold text-polita-verde">+$25</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🧂 Vaso Escarchado (Limón y Sal): <span class="font-bold text-polita-verde">+$15</span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="bg-polita-verde text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="bg-polita-rosa text-polita-verdedark font-black text-xs px-3 py-1 rounded-full uppercase">Sándwichería Artesanal</span>
+            <h2 class="text-3xl font-black text-polita-amarillo">Sabor, calidad y preparación al momento.</h2>
+            <p class="text-polita-lilalight text-sm max-w-2xl mx-auto leading-relaxed">
+                Cada uno de nuestros productos se prepara con recetas exclusivas, compotas caseras y pan artesanal de masa madre.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y UBICACIÓN -->
+    <section id="contacto" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-3xl border border-polita-lila/30 space-y-4">
+            <h3 class="font-black text-polita-verde text-xl flex items-center gap-2">
+                <i class="ph-bold ph-envelope text-polita-rosa text-2xl"></i> Contacto Directo
+            </h3>
+            <p class="text-xs text-gray-500">Haz tus pedidos o consultas directo por WhatsApp.</p>
+            <a href="https://wa.me/5215512345678" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-2xl flex items-center justify-center gap-2 transition text-sm">
+                <i class="ph-bold ph-whatsapp-logo text-xl"></i> Escribir por WhatsApp
+            </a>
+        </div>
+
+        <div id="ubicacion" class="bg-polita-amarillolight p-6 rounded-3xl border border-polita-amarillo/40 space-y-4">
+            <h3 class="font-black text-polita-verde text-xl flex items-center gap-2">
+                <i class="ph-bold ph-map-pin text-polita-verde text-2xl"></i> Ubicación
+            </h3>
+            <p class="text-xs text-gray-700 font-medium">Polita Sándwichería - Visítanos en nuestro local.</p>
+            <p class="text-xs text-gray-500">Horario: Lunes a Domingo de 8:00 AM a 8:00 PM</p>
+        </div>
+    </section>
+
+    <!-- ARRAY COMPLETO DE LAS 3 PÁGINAS DE POLITAMENU2.PDF -->
+    <script>
+        const menuData = [
+            // ================= PÁGINA 1: DESAYUNOS & REPOSTERÍA =================
+            { cat: "Desayunos", name: "Tazón de Frutas", desc: "Melón, plátano, manzana y fresa, yogurt natural, granola y miel.", price: "$60" },
+            { cat: "Desayunos", name: "Tazón de Avena", desc: "Avena, chía, coco, almendra tostada, leche caliente de almendras, fresa y plátano.", price: "$95" },
+            { cat: "Desayunos", name: "Pan Polita", desc: "Pan francés con compota de frutos rojos y queso crema casero.", price: "$105" },
+            { cat: "Desayunos", name: "Waffle", desc: "Con plátano, fresa, nuez y miel. (--> añade helado de vainilla +$20).", price: "$105" },
+            { cat: "Desayunos", name: "Benedictinos (20 min prep.)", desc: "Dos huevos pochados sobre pan, con aguacate, jamón y espinaca bañados en salsa holandesa. (--> cambia el jamón por salmón +$50).", price: "$120" },
+            { cat: "Desayunos", name: "Tosta Verde", desc: "Dos huevos estrellados o revueltos sobre pan de hogaza con guacamole y espinaca fresca. (--> extra tocino +$20).", price: "$90" },
+            { cat: "Desayunos", name: "Tosta Salmón", desc: "Pan de hogaza con aguacate, pepino, arúgula, salmón ahumado y ajonjolí.", price: "$120" },
+            { cat: "Desayunos", name: "Tosta Serrano", desc: "Dos huevos estrellados o revueltos sobre pan de hogaza con aguacate, jamón serrano y queso parmesano rallado.", price: "$120" },
+            { cat: "Desayunos", name: "Tosta Chilaquiles", desc: "Chilaquiles verdes o rojos sobre pan tostado con aguacate, crema, queso, cebolla, cilantro. (--> huevo +$20 | pollo, pastor o suadero +$25).", price: "$90" },
+            { cat: "Desayunos", name: "Enfrijoladas ó Enchiladas", desc: "Rellenas de pollo, huevo revuelto o queso panela con cebolla, cilantro, crema y queso cotija.", price: "$90" },
+            { cat: "Desayunos", name: "Huevos Rancheros Polita", desc: "Dos huevos estrellados sobre pan con frijoles y aguacate, bañados en salsa roja o verde.", price: "$95" },
+            { cat: "Desayunos", name: "Sándwich Grogu", desc: "Queso de cabra, huevo revuelto, aguacate, mayonesa de cilantro.", price: "$95" },
+            { cat: "Desayunos", name: "Sándwich Pedro Pascal", desc: "Roastbeef, huevo revuelto, queso parmesano, aderezo de ajo.", price: "$125" },
+
+            { cat: "Reposteria", name: "Galletas de Nuez con Chocolate", desc: "Galletas artesanales recién horneadas.", price: "$50" },
+            { cat: "Reposteria", name: "Galletas de Nutella", desc: "Galletas horneadas rellenas.", price: "$35" },
+            { cat: "Reposteria", name: "Galletas de Cocoa con Fruto del Monje", desc: "(Bajo índice glucémico).", price: "$60" },
+            { cat: "Reposteria", name: "Roles de Canela", desc: "Con glass opcional.", price: "$60" },
+            { cat: "Reposteria", name: "Panqué de Plátano con Cacao", desc: "(Bajo índice glucémico).", price: "$60" },
+
+            // ================= PÁGINA 2: SÁNDWICHES, PARA PICAR & PRODUCTOS =================
+            { cat: "Sándwiches", name: "Clásico", desc: "Pechuga de pavo ahumado, queso gruyere y mayonesa de habanero o cilantro.", price: "$105" },
+            { cat: "Sándwiches", name: "Madame Polita", desc: "Pechuga de pavo ahumado, queso gruyere, mayonesa de cilantro ó habanero, con un huevo estrellado encima, bañado en salsa de frijol.", price: "$125" },
+            { cat: "Sándwiches", name: "Roastbeef", desc: "Roastbeef, queso gruyere, poro caramelizado, pepinos encurtidos y mostaza dijon.", price: "$140" },
+            { cat: "Sándwiches", name: "Pollo", desc: "Pollo asado, queso chihuahua, mayonesa de chipotle, aguacate, espinaca.", price: "$125" },
+            { cat: "Sándwiches", name: "Serrano", desc: "Jamón serrano, queso chihuahua, pesto de albahaca, tomate deshidratado, arúgula y nuez.", price: "$150" },
+            { cat: "Sándwiches", name: "Salmón", desc: "Salmón ahumado, queso boursin de cabra, aguacate, pepino, alcaparras y arúgula.", price: "$160" },
+            { cat: "Sándwiches", name: "Pastor", desc: "Carne al pastor, queso chihuahua, piña caramelizada, mayonesa de chile serrano, cebolla y cilantro.", price: "$110" },
+            { cat: "Sándwiches", name: "Suadero", desc: "Carne de suadero al horno, queso chihuahua, mayonesa de chile serrano y cebollas encurtidas.", price: "$110" },
+            { cat: "Sándwiches", name: "Veggie Pesto", desc: "Aguacate, queso chihuahua, nuez, arúgula, pepino y tomate deshidratado.", price: "$95" },
+            { cat: "Sándwiches", name: "Veggie Panela", desc: "Aguacate, queso panela, arándanos, espinaca y mayonesa de cilantro.", price: "$95" },
+            { cat: "Sándwiches", name: "Veggie Huerto", desc: "Aguacate, queso chihuahua, champiñones, pimiento rojo y cebolla salteada, mayonesa de chile serrano.", price: "$95" },
+
+            { cat: "Para Picar", name: "Ensalada Polita", desc: "Lechuga italiana, espinaca, arúgula, tomate cherry, queso de cabra, nuez, arándano y crotones de pan. (Elige: Aderezo balsámico o miel mostaza). Extras: Jamón serrano, aceituna negra y pera +$60 | Pollo asado, manzana y nuez de la india +$40 | Atún fresco sellado, supremas de naranja y semillas de ajonjolí +$60.", price: "$95" },
+            { cat: "Para Picar", name: "Ensalada Verde", desc: "Espinaca, lechuga, tomate cherry y aderezo miel mostaza.", price: "$55" },
+            { cat: "Para Picar", name: "Papas", desc: "Cocinadas con limón y paprika. Elige mayonesa habanero o chile serrano.", price: "$60" },
+            { cat: "Para Picar", name: "Guacamole", desc: "Con pico de gallo y pan tostado.", price: "$70" },
+            { cat: "Para Picar", name: "Chips de Plátano", desc: "Crujientes de la casa.", price: "$50" },
+
+            { cat: "Productos Polita", name: "Salsa Macha Casera", desc: "Frasco casero receta Polita.", price: "$60" },
+            { cat: "Productos Polita", name: "Pan de Cereales (Hogaza)", desc: "Masa madre con linaza, girasol, avena y ajonjolí negro.", price: "$150" },
+            { cat: "Productos Polita", name: "Pan Blanco (Hogaza)", desc: "Masa madre tradicional.", price: "$140" },
+
+            // ================= PÁGINA 3: BEBIDAS (CAFEÍNA, SIN CAFÉ, SODAS, JUGOS, LICUADOS, CERVEZAS) =================
+            { cat: "Bebidas Cafe", name: "Expresso", desc: "Café de especialidad.", price: "$40" },
+            { cat: "Bebidas Cafe", name: "Americano", desc: "Café de especialidad.", price: "$50" },
+            { cat: "Bebidas Cafe", name: "Cold Brew", desc: "Extracción lenta en frío.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Capuccino", desc: "Capuccino tradicional.", price: "$55" },
+            { cat: "Bebidas Cafe", name: "Capuccino Saborizado", desc: "Elige: Horchata, caramelo salado o avellana.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Latte", desc: "Latte tradicional.", price: "$60" },
+            { cat: "Bebidas Cafe", name: "Latte Saborizado", desc: "Elige: Horchata, caramelo salado o avellana.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Flat White", desc: "Carga doble espresso con textura de leche.", price: "$55" },
+            { cat: "Bebidas Cafe", name: "Mocha", desc: "Chocolate artesanal con carga de café.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Chai Sucio", desc: "Té chai con carga de café.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Horchata Sucio", desc: "Agua de horchata casera con carga de café.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Affogato", desc: "Expresso servido sobre helado de vainilla.", price: "$60" },
+
+            { cat: "Bebidas Cafe", name: "Chocolate (Sin Café)", desc: "Caliente o frío.", price: "$60" },
+            { cat: "Bebidas Cafe", name: "Horchata (Sin Café)", desc: "Receta tradicional de la casa.", price: "$60" },
+            { cat: "Bebidas Cafe", name: "Matcha", desc: "Matcha premium.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Chai", desc: "Infusión aromática de especias.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Leche Dorada", desc: "Blend especial de cúrcuma y especias.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Taro", desc: "Infusión de taro.", price: "$65" },
+            { cat: "Bebidas Cafe", name: "Té", desc: "Selección de tés.", price: "$40" },
+            { cat: "Bebidas Cafe", name: "Tisana", desc: "Tisana frutal.", price: "$55" },
+
+            { cat: "Otras Bebidas", name: "Aguas de Sabor: Jamaica, Horchata ó Melón", desc: "Ingredientes 100% naturales.", price: "$40" },
+            { cat: "Otras Bebidas", name: "Aguas de Sabor Combinadas", desc: "Fresa/Kiwi, Melón/Horchata ó Pepino/Limón.", price: "$45" },
+            { cat: "Otras Bebidas", name: "Jugos Naturales (Pulpa y Agua)", desc: "Verde, Fresa, Frutos Rojos, Maracuyá, Guanábana, Mango ó Mango/Cardamomo.", price: "$65" },
+            { cat: "Otras Bebidas", name: "Licuados (Base Leche)", desc: "Mamey, Plátano, Fresa ó Chocolate. ('Ingrediente Extra +$15).", price: "$55" },
+            { cat: "Otras Bebidas", name: "Ciel Natural", desc: "Agua embotellada.", price: "$35" },
+            { cat: "Otras Bebidas", name: "Coca / Coca Zero", desc: "Refresco de lata.", price: "$40" },
+            { cat: "Otras Bebidas", name: "Ciel Mineral / Topo Chico", desc: "Agua mineralizada.", price: "$45" },
+            { cat: "Otras Bebidas", name: "Limonada", desc: "Frenca e hecha al momento.", price: "$50" },
+            { cat: "Otras Bebidas", name: "Refresco Felix", desc: "Soda artesanal.", price: "$55" },
+            { cat: "Otras Bebidas", name: "Kombucha", desc: "Bebida fermentada.", price: "$85" },
+            { cat: "Otras Bebidas", name: "Carta Blanca", desc: "Cerveza.", price: "$45" },
+            { cat: "Otras Bebidas", name: "Cerveza Cosaco Flamenca", desc: "Belga Clara artesanal.", price: "$95" },
+            { cat: "Otras Bebidas", name: "Cerveza Cosaco Ponderosa", desc: "IPA Inglesa artesanal.", price: "$95" }
+        ];
+
+        let selectedCategory = 'TODOS';
+
+        function renderMenu() {
+            const grid = document.getElementById('menuGrid');
+            const searchVal = document.getElementById('searchInput').value.toLowerCase();
+            grid.innerHTML = '';
+
+            const filtered = menuData.filter(item => {
+                const matchesCat = selectedCategory === 'TODOS' || item.cat === selectedCategory;
+                const matchesSearch = item.name.toLowerCase().includes(searchVal) || item.desc.toLowerCase().includes(searchVal);
+                return matchesCat && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center py-8 text-gray-400 font-bold">No se encontraron resultados para tu búsqueda.</div>';
+                return;
+            }
+
+            filtered.forEach(item => {
+                grid.innerHTML += `
+                    <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm flex flex-col justify-between space-y-2 hover:border-polita-rosa transition">
+                        <div>
+                            <div class="flex justify-between items-start gap-2">
+                                <h4 class="font-bold text-base text-polita-verde">${item.name}</h4>
+                                <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-xs whitespace-nowrap border border-polita-amarillo/40">${item.price}</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2 leading-relaxed">${item.desc}</p>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function filterMenu() {
+            renderMenu();
+        }
+
+        function setCategory(cat) {
+            selectedCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-polita-verde', 'text-white');
+                btn.classList.add('bg-polita-lilalight', 'text-polita-verde');
+            });
+            event.target.classList.remove('bg-polita-lilalight');
+            event.target.classList.add('bg-polita-verde', 'text-white');
+            renderMenu();
+        }
+
+        renderMenu();
+    </script>
+</body>
+</html>
