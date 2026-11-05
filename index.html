@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polita Sándwichería | Menú & Experiencia</title>
+    <title>Polita Sándwichería | Menú Oficial</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -48,8 +48,8 @@
 
             <!-- MENÚ DE NAVEGACIÓN -->
             <nav class="hidden md:flex items-center space-x-8 font-bold text-sm tracking-wide">
-                <a href="#inicio" class="text-polita-amarillo hover:text-polita-rosa transition">Inicio</a>
-                <a href="#menu" class="text-white hover:text-polita-amarillo transition">Menú</a>
+                <a href="#inicio" class="text-white hover:text-polita-amarillo transition">Inicio</a>
+                <a href="#menu" class="text-polita-amarillo hover:text-polita-rosa transition">Menú</a>
                 <a href="#nosotros" class="text-white hover:text-polita-amarillo transition">Nosotros</a>
                 <a href="#contacto" class="text-white hover:text-polita-amarillo transition">Contacto</a>
                 <a href="#ubicacion" class="bg-polita-rosa text-polita-verdedark hover:bg-polita-amarillo px-5 py-2.5 rounded-full transition shadow-md flex items-center gap-2">
@@ -57,318 +57,246 @@
                 </a>
             </nav>
 
-            <!-- MENÚ MÓVIL (BOTÓN) -->
             <div class="md:hidden">
                 <a href="#menu" class="bg-polita-rosa text-polita-verdedark font-bold text-xs px-4 py-2 rounded-full">Ver Menú</a>
             </div>
         </div>
     </header>
 
-    <!-- 1. SECCIÓN INICIO / HERO -->
-    <section id="inicio" class="relative bg-polita-lilalight/40 py-20 lg:py-28 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
-            <div class="flex-1 space-y-6 text-center md:text-left">
-                <span class="bg-polita-rosalight text-polita-verde font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full inline-block border border-polita-rosa/40">
-                    ✨ Pan de Masa Madre & Ingredientes Frescos
-                </span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-polita-verde leading-tight">
-                    El arte del sándwich artesanal hecho en casa.
-                </h1>
-                <p class="text-lg text-gray-600 max-w-xl font-medium">
-                    Desayunos disponibles todo el día, pan de cereales horneado, especialidades de autor y cafetería de especialidad.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
-                    <a href="#menu" class="bg-polita-verde hover:bg-polita-verdedark text-white font-extrabold px-8 py-4 rounded-2xl shadow-lg transition text-center flex items-center justify-center gap-2">
-                        <i class="ph-bold ph-book-open text-xl text-polita-amarillo"></i> Explorar el Menú
-                    </a>
-                    <a href="#ubicacion" class="bg-white border-2 border-polita-verde text-polita-verde hover:bg-polita-amarillolight font-extrabold px-8 py-4 rounded-2xl transition text-center flex items-center justify-center gap-2">
-                        <i class="ph-bold ph-storefront text-xl"></i> Visítanos Hoy
-                    </a>
-                </div>
-            </div>
-            <!-- Bóveda Ilustrativa / Card Highlight -->
-            <div class="flex-1 relative w-full max-w-md">
-                <div class="bg-white p-6 rounded-3xl shadow-xl border-4 border-polita-rosa space-y-4">
-                    <div class="bg-polita-amarillolight p-4 rounded-2xl text-center border border-polita-amarillo/40">
-                        <span class="text-xs font-black text-polita-verde uppercase tracking-widest">⭐ Especialidad de la Casa</span>
-                        <h3 class="text-2xl font-black text-polita-verde mt-1">Sándwich Pedro Pascal</h3>
-                        <p class="text-xs text-gray-600 mt-1">Roastbeef, huevo revuelto, queso parmesano y aderezo de ajo en pan artesanal.</p>
-                        <span class="text-xl font-black text-polita-verde block mt-2">$125.00 MXN</span>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3 text-center text-xs font-bold text-polita-verde">
-                        <div class="bg-polita-lilalight p-3 rounded-xl">☕ Café de Especialidad</div>
-                        <div class="bg-polita-rosalight p-3 rounded-xl">🥐 Repostería del Día</div>
-                    </div>
-                </div>
-            </div>
+    <!-- SECCIÓN INICIO / HERO -->
+    <section id="inicio" class="relative bg-polita-lilalight/40 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="bg-polita-rosalight text-polita-verde font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full inline-block border border-polita-rosa/40">
+                ✨ Pan de Masa Madre & Ingredientes Frescos
+            </span>
+            <h1 class="text-4xl sm:text-5xl font-black text-polita-verde max-w-3xl mx-auto leading-tight">
+                El arte del sándwich artesanal hecho en casa.
+            </h1>
+            <p class="text-gray-600 font-medium max-w-xl mx-auto text-sm sm:text-base">
+                Desayunos disponibles todo el día, pan de cereales horneado, especialidades de autor y cafetería de especialidad.
+            </p>
         </div>
     </section>
 
-    <!-- 2. SECCIÓN MENÚ PÚBLICO -->
-    <section id="menu" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        <div class="text-center max-w-2xl mx-auto space-y-3">
+    <!-- SECCIÓN MENÚ COMPLETO (ACTUALIZADO A POLITAMENU2.PDF) -->
+    <section id="menu" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        
+        <!-- ENCABEZADO MENÚ & NOTA PAN -->
+        <div class="text-center space-y-3">
             <h2 class="text-3xl sm:text-4xl font-black text-polita-verde">Nuestro Menú</h2>
-            <p class="text-gray-600 font-medium text-sm">Elige entre pan blanco o de semillas (ambos elaborados con masa madre).</p>
-        </div>
-
-        <!-- CATEGORÍA: DESAYUNOS -->
-        <div class="space-y-6">
-            <div class="flex items-center gap-3 border-b-2 border-polita-rosa pb-3">
-                <i class="ph-bold ph-sun text-3xl text-polita-amarillo bg-polita-verde p-2 rounded-xl"></i>
-                <div>
-                    <h3 class="text-2xl font-black text-polita-verde">Desayunos</h3>
-                    <span class="text-xs font-bold text-polita-rosa uppercase tracking-wider">Disponibles todo el día</span>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Tazón Frutas -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-lg text-polita-verde">Tazón de Frutas</h4>
-                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$60</span>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-2">Melón, plátano, manzana y fresa, yogurt natural, granola y miel.</p>
-                    </div>
-                </div>
-                <!-- Pan Polita -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-lg text-polita-verde">Pan Polita</h4>
-                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$95</span>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-2">Pan francés con compota de frutos rojos y queso ricotta casero.</p>
-                    </div>
-                </div>
-                <!-- Tosta Serrano -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-lg text-polita-verde">Tosta Serrano</h4>
-                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$115</span>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-2">Dos huevos estrellados o revueltos sobre pan tostado con aguacate, jamón serrano y queso parmesano.</p>
-                    </div>
-                </div>
-                <!-- Benedictinos -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-lg text-polita-verde">Benedictinos</h4>
-                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$120</span>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-2">Dos huevos pochados sobre pan con aguacate, jamón y espinaca bañados en salsa holandesa.</p>
-                    </div>
-                </div>
-                <!-- Sándwich Grogu -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-lg text-polita-verde">Sándwich Grogu</h4>
-                            <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$95</span>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-2">Queso de cabra, huevo revuelto, aguacate y mayonesa de cilantro.</p>
-                    </div>
-                </div>
-                <!-- Sándwich Pedro Pascal -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-rosa shadow-sm space-y-2 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <h4 class="font-bold text-lg text-polita-verde">Sándwich Pedro Pascal</h4>
-                            <span class="font-black text-polita-verde bg-polita-rosalight px-2.5 py-1 rounded-lg text-sm">$125</span>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-2">Roastbeef, huevo revuelto, queso parmesano y aderezo de ajo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CATEGORÍA: SÁNDWICHES -->
-        <div class="space-y-6">
-            <div class="flex items-center gap-3 border-b-2 border-polita-amarillo pb-3">
-                <i class="ph-bold ph-sandwich text-3xl text-polita-verdedark bg-polita-rosa p-2 rounded-xl"></i>
-                <h3 class="text-2xl font-black text-polita-verde">Sándwiches de la Casa</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Clásico -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
-                    <div class="flex justify-between items-start">
-                        <h4 class="font-bold text-lg text-polita-verde">Clásico</h4>
-                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$105</span>
-                    </div>
-                    <p class="text-xs text-gray-500">Pechuga de pavo ahumado, queso gruyere y mayonesa de habanero o cilantro.</p>
-                </div>
-                <!-- Madame Polita -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
-                    <div class="flex justify-between items-start">
-                        <h4 class="font-bold text-lg text-polita-verde">Madame Polita</h4>
-                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$125</span>
-                    </div>
-                    <p class="text-xs text-gray-500">Pavo ahumado, gruyere, mayonesa de cilantro con huevo estrellado encima y bañado en salsa de frijol.</p>
-                </div>
-                <!-- Roastbeef -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
-                    <div class="flex justify-between items-start">
-                        <h4 class="font-bold text-lg text-polita-verde">Roastbeef</h4>
-                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$140</span>
-                    </div>
-                    <p class="text-xs text-gray-500">Roastbeef, queso gruyere, poro caramelizado, pepinos encurtidos y mostaza dijon.</p>
-                </div>
-                <!-- Salmón -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
-                    <div class="flex justify-between items-start">
-                        <h4 class="font-bold text-lg text-polita-verde">Salmón</h4>
-                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$160</span>
-                    </div>
-                    <p class="text-xs text-gray-500">Salmón ahumado, queso boursin de cabra, aguacate, pepino, alcaparras y arúgula.</p>
-                </div>
-                <!-- Suadero -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
-                    <div class="flex justify-between items-start">
-                        <h4 class="font-bold text-lg text-polita-verde">Suadero al Horno</h4>
-                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$110</span>
-                    </div>
-                    <p class="text-xs text-gray-500">Carne de suadero al horno, queso chihuahua, mayonesa de chile serrano y cebollas encurtidas.</p>
-                </div>
-                <!-- Veggie Pesto -->
-                <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm space-y-2">
-                    <div class="flex justify-between items-start">
-                        <h4 class="font-bold text-lg text-polita-verde">Veggie Pesto</h4>
-                        <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-sm">$95</span>
-                    </div>
-                    <p class="text-xs text-gray-500">Aguacate, queso chihuahua, nuez, arúgula, pepino y tomate deshidratado.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CATEGORÍA: BEBIDAS -->
-        <div class="bg-polita-lilalight/50 p-8 rounded-3xl space-y-6">
-            <h3 class="text-2xl font-black text-polita-verde border-b border-polita-lila/40 pb-3 flex items-center gap-2">
-                <i class="ph-bold ph-coffee text-polita-rosa text-3xl"></i> Bebidas & Cafetería
-            </h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-semibold">
-                <div class="bg-white p-3 rounded-xl border">Espresso: <span class="font-bold text-polita-verde">$40</span></div>
-                <div class="bg-white p-3 rounded-xl border">Americano: <span class="font-bold text-polita-verde">$50</span></div>
-                <div class="bg-white p-3 rounded-xl border">Cold Brew: <span class="font-bold text-polita-verde">$65</span></div>
-                <div class="bg-white p-3 rounded-xl border">Latte: <span class="font-bold text-polita-verde">$60</span></div>
-                <div class="bg-white p-3 rounded-xl border">Matcha: <span class="font-bold text-polita-verde">$65</span></div>
-                <div class="bg-white p-3 rounded-xl border">Chai: <span class="font-bold text-polita-verde">$65</span></div>
-                <div class="bg-white p-3 rounded-xl border">Aguas Naturales: <span class="font-bold text-polita-verde">$40</span></div>
-                <div class="bg-white p-3 rounded-xl border">Jugos Naturales: <span class="font-bold text-polita-verde">$65</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. SECCIÓN NOSOTROS -->
-    <section id="nosotros" class="bg-polita-verde text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
-            <div class="flex-1 space-y-6">
-                <span class="bg-polita-rosa text-polita-verdedark font-black text-xs px-3 py-1 rounded-full uppercase">Nuestra Historia</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-polita-amarillo">Sándwiches hechos con paciencia, amor y masa madre.</h2>
-                <p class="text-polita-lilalight text-sm leading-relaxed">
-                    En Polita Sándwichería creemos que un gran sándwich empieza desde el pan. Horneamos opciones de masa madre (blanco y semillas) y seleccionamos los aderezos y proteína con la más alta calidad para brindarte una experiencia acogedora e inolvidable.
+            <div class="inline-block bg-polita-amarillolight border border-polita-amarillo px-4 py-2 rounded-2xl">
+                <p class="text-xs sm:text-sm font-bold text-polita-verdedark flex items-center justify-center gap-2">
+                    <i class="ph-bold ph-bread text-polita-verde text-lg"></i>
+                    Elige para tu SÁNDWICH: Pan Blanco o De Semillas (ambos de masa madre)
                 </p>
-                <div class="grid grid-cols-3 gap-4 pt-4 text-center">
-                    <div class="bg-polita-verdedark p-4 rounded-2xl border border-polita-rosa/20">
-                        <span class="text-2xl font-black text-polita-amarillo block">100%</span>
-                        <span class="text-xs text-gray-300">Artesanal</span>
-                    </div>
-                    <div class="bg-polita-verdedark p-4 rounded-2xl border border-polita-rosa/20">
-                        <span class="text-2xl font-black text-polita-rosa block">Masa Madre</span>
-                        <span class="text-xs text-gray-300">Receta Propia</span>
-                    </div>
-                    <div class="bg-polita-verdedark p-4 rounded-2xl border border-polita-rosa/20">
-                        <span class="text-2xl font-black text-polita-amarillo block">Todo el Día</span>
-                        <span class="text-xs text-gray-300">Desayunos</span>
-                    </div>
-                </div>
             </div>
-            <div class="flex-1 bg-polita-rosalight p-8 rounded-3xl text-polita-verdedark space-y-4">
-                <i class="ph-bold ph-quotes text-5xl text-polita-verde"></i>
-                <p class="font-bold text-lg leading-snug">"El mejor lugar para disfrutar de un café caliente, pan recién horneado y una buena plática."</p>
-                <span class="text-xs font-black uppercase block tracking-wider text-polita-verde">— Equipo Polita Sándwichería</span>
+        </div>
+
+        <!-- BARRA DE BÚSQUEDA Y FILTROS POR CATEGORÍA -->
+        <div class="bg-white p-4 rounded-3xl shadow-sm border border-polita-lila/30 space-y-4 sticky top-24 z-40">
+            <div class="relative">
+                <i class="ph-bold ph-magnifying-glass absolute left-4 top-3.5 text-gray-400 text-xl"></i>
+                <input type="text" id="searchInput" onkeyup="filterMenu()" placeholder="Buscar platillo o ingrediente (ej. Salmón, Roastbeef, Matcha, Waffle...)" class="w-full pl-12 pr-4 py-3 rounded-2xl bg-polita-crema text-sm font-medium focus:outline-none focus:ring-2 focus:ring-polita-rosa">
             </div>
+
+            <!-- Botones Filtro -->
+            <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-none text-xs font-bold" id="categoryButtons">
+                <button onclick="setCategory('TODOS')" class="cat-btn bg-polita-verde text-white px-4 py-2 rounded-xl whitespace-nowrap shadow-sm">Todos los productos</button>
+                <button onclick="setCategory('Desayunos')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Desayunos</button>
+                <button onclick="setCategory('Sándwiches')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Sándwiches</button>
+                <button onclick="setCategory('Para Picar')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Para Picar & Ensaladas</button>
+                <button onclick="setCategory('Reposteria')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Repostería</button>
+                <button onclick="setCategory('Bebidas')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Bebidas & Cafetería</button>
+                <button onclick="setCategory('Productos Polita')" class="cat-btn bg-polita-lilalight text-polita-verde hover:bg-polita-rosa px-4 py-2 rounded-xl whitespace-nowrap transition">Productos Polita</button>
+            </div>
+        </div>
+
+        <!-- PAQUETE DESAYUNO DESTACADO -->
+        <div class="bg-gradient-to-r from-polita-rosalight to-polita-amarillolight p-6 rounded-3xl border border-polita-rosa shadow-sm flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="space-y-1 text-center md:text-left">
+                <span class="bg-polita-verde text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider">Promoción Especial</span>
+                <h3 class="text-xl font-black text-polita-verdedark">PAQUETE DESAYUNO — $50 MXN</h3>
+                <p class="text-xs text-gray-700 font-medium">Incluye: Café americano y un agua de horchata o jamaica.</p>
+                <p class="text-[11px] text-gray-500 italic">*No aplica para llevar. Válido hasta la 1:00 pm.</p>
+            </div>
+            <div class="bg-white px-5 py-3 rounded-2xl font-black text-polita-verde text-2xl shadow-sm border border-polita-rosa/40">
+                $50
+            </div>
+        </div>
+
+        <!-- GRILLA DINÁMICA DE PRODUCTOS -->
+        <div id="menuGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Los productos se cargan con la lista exacta de POLITAMENU2.pdf -->
+        </div>
+
+        <!-- SECCIÓN DE EXTRAS Y MODIFICADORES GENERALES -->
+        <div class="bg-white p-6 rounded-3xl border border-polita-lila/30 space-y-4 text-xs">
+            <h3 class="font-black text-polita-verde text-sm uppercase tracking-wider flex items-center gap-2">
+                <i class="ph-bold ph-plus-circle text-polita-rosa text-lg"></i> Personaliza tu Bebida o Platillo (Extras)
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="bg-polita-crema p-3 rounded-xl border">🥛 Leche Almendra o Coco: <span class="font-bold text-polita-verde">+$15</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🌾 Leche Avena (Oatly): <span class="font-bold text-polita-verde">+$20</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🧊 Bebida Fría: <span class="font-bold text-polita-verde">+$10</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🧂 Vaso Escarchado (Limón y sal): <span class="font-bold text-polita-verde">+$15</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🍨 Helado de Vainilla (para Waffle/Café): <span class="font-bold text-polita-verde">+$20</span></div>
+                <div class="bg-polita-crema p-3 rounded-xl border">🥓 Extra Tocino (para Tosta): <span class="font-bold text-polita-verde">+$20</span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="bg-polita-verde text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="bg-polita-rosa text-polita-verdedark font-black text-xs px-3 py-1 rounded-full uppercase">Sándwichería Artesanal</span>
+            <h2 class="text-3xl font-black text-polita-amarillo">Sabor, calidad y preparación al momento.</h2>
+            <p class="text-polita-lilalight text-sm max-w-2xl mx-auto leading-relaxed">
+                Cada uno de nuestros productos se prepara con recetas exclusivas, compotas caseras y pan artesanal de masa madre.
+            </p>
         </div>
     </section>
 
-    <!-- 4. SECCIÓN CONTACTO -->
-    <section id="contacto" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        <div class="text-center max-w-xl mx-auto space-y-3">
-            <h2 class="text-3xl font-black text-polita-verde">Contacto & Pedidos</h2>
-            <p class="text-xs text-gray-600 font-medium">¿Tienes alguna duda o quieres realizar un pedido anticipado? Escríbenos.</p>
+    <!-- SECCIÓN CONTACTO Y UBICACIÓN -->
+    <section id="contacto" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-3xl border border-polita-lila/30 space-y-4">
+            <h3 class="font-black text-polita-verde text-xl flex items-center gap-2">
+                <i class="ph-bold ph-envelope text-polita-rosa text-2xl"></i> Contacto Directo
+            </h3>
+            <p class="text-xs text-gray-500">Haz tus pedidos o consultas directo por WhatsApp.</p>
+            <a href="https://wa.me/5215512345678" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-2xl flex items-center justify-center gap-2 transition text-sm">
+                <i class="ph-bold ph-whatsapp-logo text-xl"></i> Escribir por WhatsApp
+            </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <!-- Formulario Simple -->
-            <form class="bg-white p-6 rounded-3xl shadow-sm border border-polita-lila/30 space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-polita-verde uppercase mb-1">Nombre Completo</label>
-                    <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-polita-rosa">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-polita-verde uppercase mb-1">Correo o Teléfono</label>
-                    <input type="text" placeholder="Contacto" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-polita-rosa">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-polita-verde uppercase mb-1">Mensaje</label>
-                    <textarea rows="4" placeholder="¿En qué te podemos ayudar?" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-polita-rosa"></textarea>
-                </div>
-                <button type="button" class="w-full bg-polita-rosa hover:bg-polita-verde text-polita-verdedark hover:text-white font-black py-3 rounded-xl transition text-sm">
-                    Enviar Mensaje
-                </button>
-            </form>
+        <div id="ubicacion" class="bg-polita-amarillolight p-6 rounded-3xl border border-polita-amarillo/40 space-y-4">
+            <h3 class="font-black text-polita-verde text-xl flex items-center gap-2">
+                <i class="ph-bold ph-map-pin text-polita-verde text-2xl"></i> Ubicación
+            </h3>
+            <p class="text-xs text-gray-700 font-medium">Polita Sándwichería - Visítanos en nuestro local.</p>
+            <p class="text-xs text-gray-500">Horario: Lunes a Domingo de 8:00 AM a 8:00 PM</p>
+        </div>
+    </section>
 
-            <!-- Datos Directos -->
-            <div class="space-y-6">
-                <div class="bg-polita-amarillolight p-6 rounded-3xl border border-polita-amarillo/40 space-y-4">
-                    <h3 class="font-black text-polita-verde text-lg">Atención al Cliente</h3>
-                    <div class="space-y-3 text-sm font-medium text-gray-700">
-                        <p class="flex items-center gap-3">
-                            <i class="ph-bold ph-whatsapp-logo text-2xl text-green-600"></i> WhatsApp: (55) 1234-5678
-                        </p>
-                        <p class="flex items-center gap-3">
-                            <i class="ph-bold ph-envelope text-2xl text-polita-rosa"></i> hola@politasandwicheria.com
-                        </p>
-                        <p class="flex items-center gap-3">
-                            <i class="ph-bold ph-instagram-logo text-2xl text-polita-verde"></i> @polita.sandwicheria
-                        </p>
+    <!-- SCRIPT DE PRODUCTOS EXACTOS EXTRAÍDOS DE POLITAMENU2.PDF -->
+    <script>
+        const menuData = [
+            // DESAYUNOS (DISPONIBLES TODO EL DÍA)
+            { cat: "Desayunos", name: "Tazón de Frutas", desc: "Melón, plátano, manzana y fresa, yogurt natural, granola y miel.", price: "$60" },
+            { cat: "Desayunos", name: "Tazón de Avena", desc: "Avena, chía, coco, almendra tostada, leche caliente de almendras, fresa y plátano.", price: "$95" },
+            { cat: "Desayunos", name: "Pan Polita", desc: "Pan francés con compota de frutos rojos y queso crema casero.", price: "$105" },
+            { cat: "Desayunos", name: "Waffle", desc: "Con plátano, fresa, nuez y miel. (--> añade helado de vainilla +$20).", price: "$105" },
+            { cat: "Desayunos", name: "Benedictinos (20 min prep.)", desc: "Dos huevos pochados sobre pan, con aguacate, jamón y espinaca bañados en salsa holandesa. (--> cambia el jamón por salmón +$50).", price: "$120" },
+            { cat: "Desayunos", name: "Tosta Verde", desc: "Dos huevos estrellados o revueltos sobre pan de hogaza con guacamole y espinaca fresca. (--> extra tocino +$20).", price: "$90" },
+            { cat: "Desayunos", name: "Tosta Salmón", desc: "Pan de hogaza con aguacate, pepino, arúgula, salmón ahumado y ajonjolí.", price: "$120" },
+            { cat: "Desayunos", name: "Tosta Serrano", desc: "Dos huevos estrellados o revueltos sobre pan de hogaza con aguacate, jamón serrano y queso parmesano rallado.", price: "$120" },
+            { cat: "Desayunos", name: "Tosta Chilaquiles", desc: "Chilaquiles verdes o rojos sobre pan tostado con aguacate, crema, queso, cebolla, cilantro. (--> huevo +$20 | pollo, pastor o suadero +$25).", price: "$90" },
+            { cat: "Desayunos", name: "Enfrijoladas ó Enchiladas", desc: "Rellenas de pollo, huevo revuelto o queso panela con cebolla, cilantro, crema y queso cotija.", price: "$90" },
+            { cat: "Desayunos", name: "Huevos Rancheros Polita", desc: "Dos huevos estrellados sobre pan con frijoles y aguacate, bañados en salsa roja o verde.", price: "$95" },
+            { cat: "Desayunos", name: "Sándwich Grogu", desc: "Queso de cabra, huevo revuelto, aguacate, mayonesa de cilantro.", price: "$95" },
+            { cat: "Desayunos", name: "Sándwich Pedro Pascal", desc: "Roastbeef, huevo revuelto, queso parmesano, aderezo de ajo.", price: "$125" },
+
+            // REPOSTERÍA
+            { cat: "Reposteria", name: "Galletas de Nuez con Chocolate", desc: "Receta casera de la casa.", price: "$50" },
+            { cat: "Reposteria", name: "Galletas de Nutella", desc: "Horneadas al día.", price: "$35" },
+            { cat: "Reposteria", name: "Galletas de Cocoa con Fruto del Monje", desc: "Bajo índice glucémico.", price: "$60" },
+            { cat: "Reposteria", name: "Roles de Canela", desc: "Con glass opcional.", price: "$60" },
+            { cat: "Reposteria", name: "Panqué de Plátano con Cacao", desc: "Bajo índice glucémico.", price: "$60" },
+
+            // SÁNDWICHES (EN PAN BLANCO O DE SEMILLAS DE MASA MADRE)
+            { cat: "Sándwiches", name: "Clásico", desc: "Pechuga de pavo ahumado, queso gruyere y mayonesa de habanero o cilantro.", price: "$105" },
+            { cat: "Sándwiches", name: "Madame Polita", desc: "Pechuga de pavo ahumado, queso gruyere, mayonesa de cilantro ó habanero, con un huevo estrellado encima, bañado en salsa de frijol.", price: "$125" },
+            { cat: "Sándwiches", name: "Roastbeef", desc: "Roastbeef, queso gruyere, poro caramelizado, pepinos encurtidos y mostaza dijon.", price: "$140" },
+            { cat: "Sándwiches", name: "Pollo", desc: "Pollo asado, queso chihuahua, mayonesa de chipotle, aguacate, espinaca.", price: "$125" },
+            { cat: "Sándwiches", name: "Serrano", desc: "Jamón serrano, queso chihuahua, pesto de albahaca, tomate deshidratado, arúgula y nuez.", price: "$150" },
+            { cat: "Sándwiches", name: "Salmón", desc: "Salmón ahumado, queso boursin de cabra, aguacate, pepino, alcaparras y arúgula.", price: "$160" },
+            { cat: "Sándwiches", name: "Pastor", desc: "Carne al pastor, queso chihuahua, piña caramelizada, mayonesa de chile serrano, cebolla y cilantro.", price: "$110" },
+            { cat: "Sándwiches", name: "Suadero", desc: "Carne de suadero al horno, queso chihuahua, mayonesa de chile serrano y cebollas encurtidas.", price: "$110" },
+            { cat: "Sándwiches", name: "Veggie Pesto", desc: "Aguacate, queso chihuahua, nuez, arúgula, pepino y tomate deshidratado.", price: "$95" },
+            { cat: "Sándwiches", name: "Veggie Panela", desc: "Aguacate, queso panela, arándanos, espinaca y mayonesa de cilantro.", price: "$95" },
+            { cat: "Sándwiches", name: "Veggie Huerto", desc: "Aguacate, queso chihuahua, champiñones, pimiento rojo y cebolla salteada, mayonesa de chile serrano.", price: "$95" },
+
+            // PARA PICAR & ENSALADAS
+            { cat: "Para Picar", name: "Ensalada Polita", desc: "Lechuga italiana, espinaca, arúgula, tomate cherry, queso de cabra, nuez, arándano y crotones de pan. (Elige aderezo balsámico o miel mostaza). Extras: Jamón serrano +$60 | Pollo asado +$40 | Atún fresco sellado +$60.", price: "$95" },
+            { cat: "Para Picar", name: "Ensalada Verde", desc: "Espinaca, lechuga, tomate cherry y aderezo miel mostaza.", price: "$55" },
+            { cat: "Para Picar", name: "Papas", desc: "Cocinadas con limón y paprika. Elige mayonesa habanero o chile serrano.", price: "$60" },
+            { cat: "Para Picar", name: "Guacamole", desc: "Con pico de gallo y pan tostado.", price: "$70" },
+            { cat: "Para Picar", name: "Chips de Plátano", desc: "Crujientes de la casa.", price: "$50" },
+
+            // PRODUCTOS POLITA
+            { cat: "Productos Polita", name: "Salsa Macha Casera", desc: "Frasco casero Polita.", price: "$60" },
+            { cat: "Productos Polita", name: "Pan de Cereales (Hogaza)", desc: "Masa madre con linaza, girasol, avena y ajonjolí negro.", price: "$150" },
+            { cat: "Productos Polita", name: "Pan Blanco (Hogaza)", desc: "Masa madre tradicional.", price: "$140" },
+
+            // BEBIDAS (CAFEÍNA, SIN CAFÉ, FUENTE DE SODAS, JUGOS, LICUADOS)
+            { cat: "Bebidas", name: "Expresso", desc: "Carga clásica de café de especialidad.", price: "$40" },
+            { cat: "Bebidas", name: "Americano", desc: "Café de especialidad.", price: "$50" },
+            { cat: "Bebidas", name: "Cold Brew", desc: "Extracción lenta en frío.", price: "$65" },
+            { cat: "Bebidas", name: "Capuccino", desc: "Tradicional o saborizado (horchata, caramelo sal, avellana).", price: "$55 - $65" },
+            { cat: "Bebidas", name: "Latte", desc: "Tradicional o saborizado (horchata, caramelo sal, avellana).", price: "$60 - $65" },
+            { cat: "Bebidas", name: "Flat White", desc: "Espresso doble con microespuma de leche.", price: "$55" },
+            { cat: "Bebidas", name: "Mocha", desc: "Chocolate con carga de café.", price: "$65" },
+            { cat: "Bebidas", name: "Chai Sucio / Horchata Sucio", desc: "Chai o agua de horchata con carga de café.", price: "$65" },
+            { cat: "Bebidas", name: "Affogato", desc: "Expresso servido sobre helado de vainilla.", price: "$60" },
+            { cat: "Bebidas", name: "Bebida de Temporada", desc: "Pregunta al barista por la opción del mes.", price: "Consultar" },
+            { cat: "Bebidas", name: "Sin Café (Chocolate, Horchata, Té)", desc: "Bebidas reconfortantes calientes o frías.", price: "$40 - $60" },
+            { cat: "Bebidas", name: "Sin Café (Matcha, Chai, Leche Dorada, Taro, Tisana)", desc: "Especialidades de té e infusiones.", price: "$55 - $65" },
+            { cat: "Bebidas", name: "Aguas de Sabor (Ingredientes naturales)", desc: "Jamaica, Horchata, Melón, Fresa/Kiwi, Melón/Horchata o Pepino/Limón.", price: "$40 - $45" },
+            { cat: "Bebidas", name: "Jugos Naturales (Pulpa y Agua)", desc: "Verde, Fresa, Frutos Rojos, Maracuyá, Guanábana, Mango o Mango/Cardamomo.", price: "$65" },
+            { cat: "Bebidas", name: "Licuados (Base Leche)", desc: "Mamey, Plátano, Fresa ó Chocolate. (Ingrediente extra +$15).", price: "$55" },
+            { cat: "Bebidas", name: "Fuente de Sodas & Refrescos", desc: "Ciel Natural ($35), Coca/Coca Zero ($40), Ciel Mineral ($45), Topo Chico ($45), Limonada ($50), Felix ($55), Kombucha ($85).", price: "$35 - $85" },
+            { cat: "Bebidas", name: "Cervezas", desc: "Carta Blanca ($45), Cerveza Cosaco Flamenca Belga Clara ($95), Cerveza Cosaco Ponderosa IPA ($95).", price: "$45 - $95" }
+        ];
+
+        let selectedCategory = 'TODOS';
+
+        function renderMenu() {
+            const grid = document.getElementById('menuGrid');
+            const searchVal = document.getElementById('searchInput').value.toLowerCase();
+            grid.innerHTML = '';
+
+            const filtered = menuData.filter(item => {
+                const matchesCat = selectedCategory === 'TODOS' || item.cat === selectedCategory;
+                const matchesSearch = item.name.toLowerCase().includes(searchVal) || item.desc.toLowerCase().includes(searchVal);
+                return matchesCat && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center py-8 text-gray-400 font-bold">No se encontraron productos con esa búsqueda.</div>';
+                return;
+            }
+
+            filtered.forEach(item => {
+                grid.innerHTML += `
+                    <div class="bg-white p-5 rounded-2xl border border-polita-lila/30 shadow-sm flex flex-col justify-between space-y-2 hover:border-polita-rosa transition">
+                        <div>
+                            <div class="flex justify-between items-start gap-2">
+                                <h4 class="font-bold text-base text-polita-verde">${item.name}</h4>
+                                <span class="font-black text-polita-verde bg-polita-amarillolight px-2.5 py-1 rounded-lg text-xs whitespace-nowrap border border-polita-amarillo/40">${item.price}</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2 leading-relaxed">${item.desc}</p>
+                        </div>
                     </div>
-                </div>
+                `;
+            });
+        }
 
-                <div class="bg-polita-lilalight p-6 rounded-3xl border border-polita-lila/30">
-                    <h4 class="font-bold text-polita-verde text-sm uppercase tracking-wider mb-2">Horarios de Atención</h4>
-                    <p class="text-xs text-gray-600">Lunes a Domingo: 8:00 AM - 8:00 PM</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        function filterMenu() {
+            renderMenu();
+        }
 
-    <!-- 5. SECCIÓN UBICACIÓN -->
-    <section id="ubicacion" class="bg-polita-lilalight/30 py-20 border-t border-polita-lila/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-center">
-            <div class="space-y-2">
-                <span class="bg-polita-amarillo text-polita-verdedark font-black text-xs px-3 py-1 rounded-full uppercase">Visítanos</span>
-                <h2 class="text-3xl font-black text-polita-verde">¿Dónde estamos?</h2>
-                <p class="text-xs text-gray-600">Te esperamos para disfrutar de la experiencia completa de Polita Sándwichería.</p>
-            </div>
+        function setCategory(cat) {
+            selectedCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-polita-verde', 'text-white');
+                btn.classList.add('bg-polita-lilalight', 'text-polita-verde');
+            });
+            event.target.classList.remove('bg-polita-lilalight');
+            event.target.classList.add('bg-polita-verde', 'text-white');
+            renderMenu();
+        }
 
-            <!-- Mapa / Caja de Dirección -->
-            <div class="bg-white p-4 rounded-3xl shadow-md border border-polita-lila/30 max-w-3xl mx-auto space-y-4">
-                <div class="bg-polita-crema p-6 rounded-2xl text-center space-y-2">
-                    <i class="ph-bold ph-map-pin text-4xl text-polita-rosa"></i>
-                    <h3 class="font-black text-xl text-polita-verde">Polita Sándwichería</h3>
-                    <p class="text-sm text-gray-600">Tu dirección física aquí (Calle, Número, Colonia, Ciudad)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-polita-verdedark text-white py-8 border-t border-white/10 text-center text-xs space-y-2">
-        <p class="font-bold text-polita-amarillo">Polita Sándwichería © 2026</p>
-        <p class="text-gray-400">Todos los derechos reservados. Pan artesanal & Cafetería.</p>
-    </footer>
-
+        renderMenu();
+    </script>
 </body>
 </html>
